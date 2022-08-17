@@ -17,7 +17,7 @@
 
 # Update DNS name
 resource "aws_route53_record" "splunk" {
-  zone_id = aws_route53_zone.this.id #module.dns.aws_sub_zone_id
+  zone_id = data.aws_route53_zone.this.id #module.dns.aws_sub_zone_id
   name    = "splunk.go.hashidemos.io"
   type    = "A"
   ttl     = "300"

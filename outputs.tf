@@ -8,9 +8,9 @@ output "splunk_ip" {
 }
 
 # important dns outputs
-output "aws_sub_zone_id" {
-  value = module.dns.aws_sub_zone_id
-}
+# output "aws_sub_zone_id" {
+#   value = module.dns.aws_sub_zone_id
+# }
 
 output "aws_zone_record" {
   value = aws_route53_record.splunk.fqdn
